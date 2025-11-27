@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+      <link rel="stylesheet" href="styles.css"> 
+    <script src="https://kit.fontawesome.com/6def39acb4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+
+    <div id="LoginNav" >
+         <a href="index.html">
+            <img src="images/cocolinen_logo.svg" alt="Cocolinen logo">
+        </a>
+    </div>
+ 
+
+    <div class="loginForm">
+        
+        <form method="POST" action="php/auth.php?action=login"  novalid>
+
+            <h2>Sign in to your account</h2>
+
+            <label for="loginEmail">Email Address</label>
+            <input type="email" required id="loginEmail" placeholder="john@example.com" autocomplete="email">
+
+             <label for="loginPassword">Password</label>
+            <input type="password" required id="loginPassword" autocomplete="current-password">
+
+            <div>
+            <label for="checkbox">Remember my password</label>
+            <input type="checkbox" class="checkbox">
+            </div>
+
+            <button type="submit" class="signInButton">Login</button>
+
+            <p>New to the Cocolinen Family? <a href="register.html">Register now</a></p>
+            
+        </form>
+    </div>
+
+</body>
+</html>

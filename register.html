@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+          <link rel="stylesheet" href="styles.css"> 
+    <script src="https://kit.fontawesome.com/6def39acb4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+     <div id="LoginNav" >
+         <a href="index.html">
+            <img src="images/cocolinen_logo.svg" alt="Cocolinen logo">
+        </a>
+    </div>
+
+    <div class="loginForm" >
+    
+        
+        <form method="POST" action="php/auth.php?action=login" novalid>
+                <h2>Create a new account</h2>
+            <label for="firstName">First Name</label>
+            <input type="text" required name="firstName" id="firstName" placeholder="John" autocomplete="given-name">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" required name="lastName" id="lastName" placeholder="Doe" autocomplete="family-name">
+
+             <label for="regEmail">Email Address</label>
+            <input type="email" required name="email" id="regEmail" placeholder="johndoe@example.com" autocomplete="email">
+
+
+            <label for="regPassword">Password</label>
+            <input type="password" required id="regPassword" autocomplete="new-password">
+
+
+            <div id="tickPolicy" >
+
+                <label for="checkbox">You agree with our User Agreement and acknowledge reading our User 
+                Privacy Notice.</label>
+            <input type="checkbox" class="checkbox" required> 
+            </div>
+
+
+
+            <button type="submit" class="signInButton">Create Account</button>
+
+            <p>Already a user? <a href="login.html">Log in</a></p>
+            
+        </form>
+    </div>
+
+</body>
+</html>
